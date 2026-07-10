@@ -5095,6 +5095,17 @@
         }
     </script>
 
+<!-- test-integration demo popup -->
+<div id="claude-test-popup" style="position:fixed;inset:0;background:rgba(30,40,38,.55);display:flex;align-items:center;justify-content:center;z-index:99999;opacity:0;transition:opacity .6s ease;">
+  <div style="background:#fffdf8;border-radius:18px;max-width:420px;width:88%;padding:2.2rem 1.8rem;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,.25);font-family:Georgia,'Times New Roman',serif;">
+    <div style="font-size:2.4rem;line-height:1.2;margin-bottom:.8rem;">Hi Irene 👋</div>
+    <p style="font-size:1.15rem;color:#3a4a46;margin:0 0 .5rem;">This has been created directly from your computer.</p>
+    <p style="font-size:.95rem;color:#7a8a86;margin:0 0 1.4rem;">Esto se ha creado directamente desde tu ordenador.</p>
+    <button onclick="document.getElementById('claude-test-popup').style.opacity='0';setTimeout(function(){document.getElementById('claude-test-popup').remove()},600)" style="background:#4a6b5f;color:#fff;border:none;border-radius:999px;padding:.7rem 2.2rem;font-size:1rem;cursor:pointer;">Close · Cerrar</button>
+  </div>
+</div>
+<script>window.addEventListener('load',function(){setTimeout(function(){var p=document.getElementById('claude-test-popup');if(p)p.style.opacity='1'},400)});</script>
+
 </body>
 
 </html>
